@@ -35,3 +35,15 @@
   background-image: url("food.png");
   background-repeat: no-repeat;
 }
+
+#left
+{
+  padding: 20px;
+  width: 225px;
+}
+
+#right
+{
+  padding: 20px;
+  width: 225px;
+}

@@ -34,8 +34,25 @@ function gamegenerater()
   document.getElementById('cell'+x+'-8').classList.add('Player');
   food();
 }
-document.onkeydown = checkKey;
 
+function left() {
+  document.getElementById('cell'+x+'-8').classList.remove('Player');
+  x = x - 1;
+  if(x == 0)
+  {x = x + 1}
+  document.getElementById('cell'+x+'-8').classList.add('Player');
+}
+
+function right() {
+  document.getElementById('cell'+x+'-8').classList.remove('Player');
+  x = x + 1;
+  if(x == 10)
+  {x = x - 1}
+  document.getElementById('cell'+x+'-8').classList.add('Player');
+}
+
+
+document.onkeydown = checkKey;
 function checkKey(e) {
 
     e = e || window.event;
